@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 스크롤바의 폭 너비 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f4f6fa;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2e3239; /*스크롤바 뒷 배경 색상*/
+}
+
+body {
+  /* IE */
+  scrollbar-face-color: #f4f6fa;
+  scrollbar-track-color: #2e3239;
+
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: black white; /* 검은색 Thumb 와 흰색 Track */
+}
